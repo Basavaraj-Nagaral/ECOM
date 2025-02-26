@@ -7,11 +7,11 @@ app = Flask(__name__)
 @app.route('/product', methods=['GET'])
 def home():
     return jsonify([
-    { id: 1, "name": "Fresh Tomatoes", "price": 30, "category": "Vegetables" },
-    { id: 2, "name": "Organic Carrots", "price": 40, "category": "Vegetables" },
-    { id: 3, "name": "Green Apples", "price": 100, "category": "Fruits" },
-    { id: 4, "name": "Brown Bread", "price": 50, "category": "Bakery" },
-    { id: 5, "name": "Fresh Milk", "price": 60, "category": "Dairy" }
+    { "id": 1, "name": "Fresh Tomatoes", "price": 30, "category": "Vegetables" },
+    { "id": 2, "name": "Organic Carrots", "price": 40, "category": "Vegetables" },
+    { "id": 3, "name": "Green Apples", "price": 100, "category": "Fruits" },
+    { "id": 4, "name": "Brown Bread", "price": 50, "category": "Bakery" },
+    { "id": 5, "name": "Fresh Milk", "price": 60, "category": "Dairy" }
   ])
 
 @app.route('/login', methods=['POST'])
